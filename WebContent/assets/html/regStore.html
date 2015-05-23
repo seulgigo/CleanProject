@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>가게등록</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/regStore.css">
+</head>
+<body>
+	<!-- 헤더 -->
+	<div class="nav">
+		<div class="name">
+			<p>세탁배달요기요</p>
+		</div>
+		<div class="rightNav">
+			<a href="#">로그인</a> <a href="#">회원가입</a>
+		</div>
+	</div>
+
+	<!-- 로고 -->
+	<div class="container logo">
+		<div class="image">
+			<img src="../ico/Logo.png" style="height: 100%">
+		</div>
+	</div>
+
+	<!-- 가게페이지 -->
+	<div class="container margin-top">
+		<!-- 왼쪽 메뉴 -->
+		<div class="leftSide col-md-2">
+			<div class="regStore">
+				<p align="center" style="padding-top: 45px;">가게페이지</p>
+			</div>
+			<div class="rightMenu">
+				<ul>
+					<li><a href="#">가게등록</a></li>
+					<li><a href="#">가게관리</a></li>
+					<li><a href="#">이벤트 추가</a></li>
+				</ul>
+			</div>
+		</div><!-- /.leftSide -->
+
+		<!-- 오른쪽 등록내용 -->
+		<div class="rightSide col-md-10">
+			<div class="userInfo">
+				<p>고슬기님 반갑습니다.</p>
+			</div>
+			<div class="regInfo">
+				<form class="form-horizontal">
+					<!-- 가게이름 -->
+					<div class="form-group">
+						<label class="col-md-2 control-label">가게이름</label>
+						<div class="col-md-4">
+							<input type="text" class="form-control" name="storeName">
+						</div>
+					</div>
+					
+					<!-- 운영시간 -->
+					<div class="form-group">
+						<label class="col-md-2 control-label">운영요일</label>
+						<div class="col-sm-2">
+							<select name="operationDate">
+								<option value="주중">월-금</option>
+								<option value="주말">주말</option>
+								<option value="365">365</option>
+							</select>
+						</div>
+						<label class="col-md-2 control-label">운영시간</label>
+						<div class="col-md-3">
+							<input type="text" class="form-control" name="operationTime">
+						</div>
+					</div>
+					
+					<!-- 주소 -->
+					<div class="form-group">
+						<label class="col-md-2 control-label">주소</label>
+						<div class="col-sm-2">
+							<select name="8do">
+								<option value="서울특별시">서울특별시</option>
+								<option value="전라북도">전라북도</option>
+								<option value="충청북도">충청북도</option>
+							</select>
+						</div>
+						<div class="col-sm-2">
+							<select name="si">
+								<option value="군산시">군산시</option>
+								<option value="전주시">전주시</option>
+								<option value="익산시">익산시</option>
+							</select>
+						</div>
+						<div class="col-sm-2">
+							<select name="dong">
+								<option value="금암동">금암동</option>
+								<option value="서신동">서신동</option>
+								<option value="송천동">송천동</option>
+							</select>
+						</div>
+					</div>
+					
+					<!-- 세탁추가 -->
+					<div class="form-group">
+						<label class="col-md-2 control-label">세탁종류</label>
+						<div class="col-md-2">
+							<select name="kind">
+								<option value="물">물</option>
+								<option value="드라이">드라이</option>
+								<option value="신발">신발</option>
+							</select>
+						</div>
+
+						<label class="col-md-2 control-label">가격</label>
+						<div class="col-md-3">
+							<input type="text" class="form-control" name="price">
+						</div>
+						<div class="col-md-1">
+							<button type="submit" class="btn btn-default">추가</button>
+						</div>
+						<div class="col-md-1">
+							<button type="submit" class="btn btn-default">삭제</button>
+						</div>
+					</div>
+					
+					<!-- 가격목록 -->
+					<div class="form-group">
+						<div class="col-md-offset-2 col-sm-2">
+							<select name="priceList" multiple="multiple">
+								<option value="주중">물세탁 1000</option>
+								<option value="주말">드라이 2000</option>
+								<option value="365">신발 3000</option>
+							</select>
+						</div>
+
+						<div class="col-md-offset-2 col-md-5 list-group">
+							<a href="#" class="list-group-item"> 
+								<span class="glyphicon glyphicon-camera"></span>물세탁
+								<span class="badge">2500</span>
+							</a>
+							<a href="#" class="list-group-item">
+								<span class="glyphicon glyphicon-file"></span>드라이
+								<span class="badge">5000</span>
+							</a> 
+							<a href="#" class="list-group-item">
+								<span class="glyphicon glyphicon-music"></span>이불 
+								<span class="badge">7000</span>
+							</a> 
+							<a href="#" class="list-group-item">
+								<span class="glyphicon glyphicon-film"></span>신발
+								<span class="badge">3000</span>
+							</a>
+						</div>
+					</div>
+					<!-- 취소 등록 버튼 -->
+					<div class="form-group">
+						<div class="col-md-offset-5 col-md-1">
+							<button type="submit" class="btn btn-default">취소</button>
+						</div>
+						<div class="col-md-1">
+							<button type="submit" class="btn btn-default">등록</button>
+						</div>
+					</div>
+				</form>
+			</div><!-- /.regInfo -->
+		</div><!-- /.rightSide -->
+	</div><!-- /.container -->
+</body>
+</html>

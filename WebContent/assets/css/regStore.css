@@ -1,0 +1,66 @@
+.nav {
+	background-color:#AFE1FF;
+	height: 40px;
+}
+
+.name {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.rightNav {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.logo {
+	background-color: #F6F6F6;
+	height: 150px;
+	width: 100%;
+}
+
+.image {
+	text-align: center;
+	height: 100%;
+}
+
+.margin-top {
+	margin-top: 20px;
+}
+
+.regStore {
+	background-color: #00D8FF;
+	height: 110px;
+}
+
+.rightMenu {
+	background-color: #f6f6f6;
+	height: 250px;
+}
+
+.userInfo {
+	border-top: 2px solid #5CD1E5;
+	border-bottom: 1px solid #5CD1E5;
+	height: 110px;
+}
+
+.regInfo {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	border-top: 2px solid #5CD1E5;
+	border-bottom: 1px solid #5CD1E5;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
+}
+
+li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
